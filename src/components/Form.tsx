@@ -35,9 +35,9 @@ export function Form() {
         open: true,
         title: "✅ Sucesso! ",
         
-        description: url.url,
+        description: `http://localhost:3333/${url.shortUrl}`,
         action: <ToastAction altText="Copy"  className="border-0 hover:bg-transparent hover:opacity-60" onClick={() => {
-          window.navigator.clipboard.writeText('colou')
+          window.navigator.clipboard.writeText(`http://localhost:3333/${url.shortUrl}`)
         }}>Copy</ToastAction>,
         className: "bg-gray-900 text-gray-100 border-gray-700",
       })
